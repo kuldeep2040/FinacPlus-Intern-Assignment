@@ -30,6 +30,23 @@ The main app consumes the music library as a micro frontend using Webpack Module
 - **Shared dependencies** (React, React-DOM)
 - **Error boundaries** for resilient loading
 
+## 🌐 Live Demo Links
+
+* **Main App:** 
+    * *URL: https://finac-plus-ks-main.vercel.app/*
+* **Music Library Micro Frontend:**
+    * *URL: https://finac-plus-music.vercel.app/*
+
+---
+
+## ⚙️ Technical Details
+
+* **React:** Functional components with hooks.
+* **State Management:** `useState` and `Context API` are used for managing application state.
+* **Authentication:** A mock JWT is stored in `localStorage` to persist the user session.
+* **Build Tools:** The project uses [Vite/Webpack] with lazy loading for the micro frontend.
+
+
 ## 🚀 Quick Start
 
 ### Installation & Setup
@@ -55,21 +72,6 @@ The main app consumes the music library as a micro frontend using Webpack Module
 
 4. **Open your browser** and navigate to http://localhost:3000
 
-### Alternative: Manual Setup
-
-If you prefer to run each app separately:
-
-```bash
-# Terminal 1 - Start Music Library MFE
-cd music-library-mfe
-npm install
-npm run dev
-
-# Terminal 2 - Start Main App
-cd main-app
-npm install
-npm run dev
-```
 
 ## 🔑 Demo Credentials
 
@@ -141,7 +143,6 @@ npm run build:mfe    # Build MFE only
 - **Styling:** Tailwind CSS
 - **State Management:** React Context API + useReducer
 - **Authentication:** JWT (mock implementation)
-- **Development:** Hot Module Replacement (HMR)
 
 ## 🔧 Micro Frontend Architecture
 
@@ -190,20 +191,6 @@ The project extensively uses JavaScript array methods:
 - **reduce():** For grouping songs by categories
 - **map():** For rendering song lists and dropdowns
 
-## 🔐 Authentication System
-
-### JWT Implementation
-- **Mock JWT tokens** for demo purposes
-- **Role-based access control** (admin/user)
-- **Persistent sessions** using localStorage
-- **Automatic session restoration** on app reload
-- **Secure logout** with token cleanup
-
-### Security Features
-- **Token validation** on app initialization
-- **Role-based UI rendering** 
-- **Protected actions** for admin-only features
-- **Automatic logout** on token expiration
 
 ## 🎨 UI/UX Features
 
@@ -227,77 +214,8 @@ The project extensively uses JavaScript array methods:
    ```bash
    npm run preview
    ```
-
-### Deployment Considerations
-
-- **Music Library MFE** must be deployed and accessible before the Main App
-- Update the `remotes` configuration in `main-app/vite.config.js` with production URLs
-- Ensure CORS is properly configured for cross-origin requests
-- Consider using a CDN for static assets
-
-### Example Production Configuration
-
-```javascript
-// main-app/vite.config.js
-remotes: {
-  musicLibraryMfe: 'https://music-library-mfe.your-domain.com/assets/remoteEntry.js'
-}
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **"Music Library Unavailable" Error**
-   - Ensure the Music Library MFE is running on port 3001
-   - Check that both apps are started
-   - Verify Module Federation configuration
-
-2. **Authentication Issues**
-   - Clear localStorage: `localStorage.clear()`
-   - Use the exact demo credentials provided
-   - Check browser console for errors
-
-3. **Tailwind CSS PostCSS Error**
-   - If you see "It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin"
-   - Make sure `@tailwindcss/postcss` is installed: `npm install @tailwindcss/postcss`
-   - Verify postcss.config.js uses `'@tailwindcss/postcss': {}` instead of `tailwindcss: {}`
-
-4. **Styling Issues**
-   - Ensure Tailwind CSS is properly configured
-   - Check that PostCSS is processing the CSS files
-   - Verify that both apps have their CSS imported
-
-5. **Module Federation Errors**
-   - Ensure both apps are running
-   - Check network tab for failed remote entry requests
-   - Verify shared dependencies configuration
-
-6. **Node.js Version Warning**
-   - You may see warnings about Node.js version requirements
-   - The apps should still work with Node.js 22.2.0 despite the warnings
-   - For production, consider upgrading to Node.js 22.12+ or 20.19+
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Vite team for the blazing fast build tool
-- Tailwind CSS for the utility-first CSS framework
-- Module Federation team for making micro frontends possible
-
 ---
 
-**Happy Coding! 🎵✨**
+**Thnk You Kuldeep Singh! 🎵✨**
 #
+
