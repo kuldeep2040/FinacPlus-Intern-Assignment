@@ -19,7 +19,6 @@ The main app consumes the music library as a micro frontend using Webpack Module
 - **Demo credentials** for easy testing
 
 ### 🎵 Music Library
-- **CRUD Operations** (Create, Read, Update, Delete songs)
 - **Advanced Filtering** by genre, search terms
 - **Sorting** by title, artist, album, genre, year
 - **Grouping** by artist, album, genre, year
@@ -32,10 +31,6 @@ The main app consumes the music library as a micro frontend using Webpack Module
 - **Error boundaries** for resilient loading
 
 ## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
 
 ### Installation & Setup
 
@@ -305,5 +300,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Happy Coding! 🎵✨**
-#   F i n a c P l u s - I n t e r n - A s s i g n m e n t  
- 
+#
