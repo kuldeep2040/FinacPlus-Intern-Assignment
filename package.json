@@ -1,0 +1,31 @@
+{
+  "name": "music-library-project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Music Library app with React + Micro Frontend architecture",
+  "scripts": {
+    "install:all": "npm install && cd main && npm install && cd ../music && npm install",
+    "dev": "concurrently \"npm run dev:mfe\" \"npm run dev:main\"",
+    "dev:main": "cd main && npm run dev",
+    "dev:mfe": "cd music && npm run dev",
+    "build": "cd music && npm run build && cd ../main && npm run build",
+    "build:main": "cd main && npm run build",
+    "build:mfe": "cd music && npm run build",
+    "preview": "concurrently \"npm run preview:mfe\" \"npm run preview:main\"",
+    "preview:main": "cd main && npm run preview",
+    "preview:mfe": "cd music && npm run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "react",
+    "micro-frontend",
+    "module-federation",
+    "vite",
+    "tailwindcss",
+    "music-library"
+  ],
+  "author": "",
+  "license": "MIT"
+}
